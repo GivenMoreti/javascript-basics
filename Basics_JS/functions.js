@@ -108,9 +108,22 @@ const minMax = (arr) => {
 //console.log(minMax([1, 23, 5, 8]));     //{ min: 1, max: 23 }
 
 
-((length,width)=>{
- const area = length * width;
- const output = `The length is ${length} and width is ${width} and area is ${area}`
- console.log(output);
-})(2,3);
+((length, width) => {
+    const area = length * width;
+    const output = `The length is ${length} and width is ${width} and area is ${area}`
+    console.log(output);
+})(2, 3);
 
+//execution context phases
+/**
+ * memory creation phase
+ * create global object
+ * create 'this' object and bind it to the global object
+ * setup memory heap for storing vars abd function refs
+ * store functions and vars in global execution context and set to "undefined"
+ * 
+ * execution phase
+ * assign values to each variable
+ * execute code line by line
+ * create a new execution context for each function call
+*/
