@@ -54,3 +54,4 @@ if (age >= 18) {
 
 const canVote = age >= 18 ? console.log("can vote") : console.log("cannot vote");
 // console.log(canVote);
+
